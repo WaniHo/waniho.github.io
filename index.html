@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>QQ邮箱</title>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script>
+		//刷新界面图片
+			$(function(){
+				var number = Math.random();
+				number = Math.ceil(number * 6); 
+				document.getElementById("lh").src="img/login"+number+".jpg";
+			});
+		</script>
+		
+		<style>
+			#dh{
+			position: absolute;
+			top: 0px;
+			left: 1px;
+			}
+			#wb{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			}
+			a:link{text-decoration:none;}
+			a:hover{text-decoration:underline;}
+			#dhli{
+			position: relative;
+			top: 12px;
+			left: 1090px;
+			width: 200px;
+			}
+			#zb{
+			position: absolute;
+			top: 63px;
+			left: 0px;
+			}
+			
+			#zw{
+			position: absolute;
+			top: 580px;
+			left: 0px;
+			width: 1360px;
+			background-image:url(img/下部分.png);background-repeat:;
+			}
+			#zw1{
+			position: relative;
+			top: 570px;
+			left: 400px;
+			width: 600px;
+			}
+			#login{
+			position: absolute;
+			top: 130px;
+			left: 820px;
+			width: 330px;
+			height: 380px;
+			border: solid 2px silver;
+			}
+			#zh{
+			margin: 0px;
+			background-color: aliceblue;
+			height: 50px;
+			}
+			#zh1{
+			font-family: "微软雅黑";
+			font-size: 17px;
+			position: relative;
+			top: -38px;
+			left: 110px;
+			}
+			#tab{
+			position: absolute;
+			top: 90px;
+			left:30px;
+			}
+			#zh2{
+			position: absolute;
+			top: 350px;
+			left:110px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 导航栏-->
+		<div>
+			<img src="img/导航栏素材1.png" id="dh"/>	
+			<img src="img/导航栏.png" id="wb"/>
+		</div>
+		<!--导航栏尾部 -->
+		<div id="dhli">
+			<a href="#">基本版|</a>
+			<a href="#">English|</a>
+			<a href="#">手机版|</a>
+			<a href="#">磊哥邮箱</a>
+		</div>
+		<!-- 中部1-->
+		<div id="zb">
+			<img src="img/login6.jpg" id="lh"/>
+		</div>
+		
+		<div id="login">
+			<h1 id="zh"></h1>
+			<a id="zh1">账号密码登录</a>
+			<form>
+				<table id="tab">
+					<tr>
+						<td>
+							<input type="text" placeholder="支持QQ号/邮箱登录" style="height: 30px;width: 260px;font-family:  '微软雅黑' ;" name="usename"id="name"/>
+						</td>
+					</tr>
+					<tr></tr><tr></tr><tr></tr>
+					<tr>
+						<td>
+							<input type="password" placeholder="密码" style="height: 30px;width: 260px;font-family:  '微软雅黑' ;"name="password"id="pwd"/>
+						</td>
+					</tr>
+					<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+					<tr>
+						<td>
+							<input type="checkbox"/>保存密码？
+						</td>
+					</tr>
+					<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+					<tr>
+						<td>
+							<input type="submit"value="登录"style="width: 265px;height: 40px;background-color: cornflowerblue;font-size: 18px;font-family: '微软雅黑';color: azure;"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<div id="zh2">
+				<a href="#">忘了密码？</a>|
+				<a href="#">注册新账号</a>|
+				<a href="#">意见反馈</a>
+			</div>
+		</div>
+		
+		<div id="zw">
+			<img src="img/下部分.png" id="pu"/>
+		</div>
+		<div id="zw1">
+			<a href="#">关于腾讯|</a>
+			<a href="#">服务条款|</a>
+			<a href="#">客服中心|</a>
+			<a href="#">联系我们|</a>	
+			<a href="#">帮助中心|</a>	
+			<a>1998 - 2017 Tencent Inc. All Rights Reserved.</a>
+		</div>
+		<script>
+			/*$(function(){
+				//获取焦点
+				$("input").focus(
+					function(){
+						var $test=$(this).val();
+						if ($test=="支持QQ号/邮箱登录"||$test=="QQ密码") {
+							$(this).val("");
+						}
+					}
+				);
+				//失去焦点
+				$("input").blur(
+					function(){
+						var $test=$("#name").val();
+						var $pwd1=$("#pwd").val();
+						if ($test=="") {
+							$("#name").val("支持QQ号/邮箱登录");
+						}else if ($pwd1=="") 
+						{
+							$("#pwd").val("QQ密码");
+						}
+					}
+				);
+			});*/
+		</script>
+	</body> 
+</html>
